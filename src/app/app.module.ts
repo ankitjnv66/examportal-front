@@ -13,7 +13,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HomeComponent } from './pages/home/home.component'
+import { MatCardModule} from '@angular/material/card'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
     NavbarComponent,
     FooterComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
     MatFormFieldModule,
     FormsModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
